@@ -1,10 +1,10 @@
 # regression_model
 
 
-usage: train.py [-h] --s S --trainfile TRAINFILE [--delimiter DELIMITER]
-                [--modelfile MODELFILE] [--method METHOD]
-                [--iterations ITERATIONS] [--alpha ALPHA]
-                [--threshold THRESHOLD]
+usage: train.py [-h] --s S --trainfile TRAINFILE [--delimiter DELIMITER]\n
+                [--modelfile MODELFILE] [--method METHOD]\n
+                [--iterations ITERATIONS] [--alpha ALPHA]\n
+                [--threshold THRESHOLD]\n
 
 optional arguments:
   -h, --help            show this help message and exit
