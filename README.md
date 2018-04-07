@@ -1,6 +1,12 @@
 # regression_model
 
 
+required:
+python3
+numpy
+matplotlib
+argparse
+
 usage: train.py [-h]
 
 --s S 
