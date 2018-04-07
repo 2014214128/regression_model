@@ -2,9 +2,13 @@
 
 
 required:
+
 python3
+
 numpy
+
 matplotlib
+
 argparse
 
 usage: train.py [-h]
