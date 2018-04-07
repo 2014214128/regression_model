@@ -76,6 +76,8 @@ example two:
 
 python train.py --s 1 --trainfile trainfile\train_logistic.txt --modelfile modelfile\model_logistic.txt
 
+output:
+
 theta:
 
 [[13.29983403]
@@ -133,10 +135,14 @@ example three:
 
 python predict.py --s 0 --modelfile modelfile\model_linear.txt --predictfile predictfile\predict_linear.txt --resultfile resultfile\result_linear.txt
 
+output:
+
 ![Alt text](https://github.com/2014214128/regression_model/raw/master/pic/3.jpg)
 
 example four:
 
 python predict.py --s 1 --modelfile modelfile\model_logistic.txt --predictfile predictfile\predict_logistic.txt --resultfile resultfile\result_logistic.txt
+
+output:
 
 ![Alt text](https://github.com/2014214128/regression_model/raw/master/pic/4.jpg)
