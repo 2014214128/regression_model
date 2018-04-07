@@ -3,55 +3,57 @@
 
 required:
 
-python3
+              python3
 
-numpy
+              numpy
 
-matplotlib
+              matplotlib
 
-argparse
+              argparse
 
 usage: train.py [-h]
 
---s S 
+                --s S 
 
---trainfile TRAINFILE [--delimiter DELIMITER]
+                --trainfile TRAINFILE 
                 
-[--modelfile MODELFILE] 
-
-[--method METHOD]
+                [--delimiter DELIMITER]
                 
-[--iterations ITERATIONS] 
+                [--modelfile MODELFILE] 
 
-[--alpha ALPHA]
+                [--method METHOD]
+                
+                [--iterations ITERATIONS] 
 
-[--threshold THRESHOLD]
+                [--alpha ALPHA]
+
+                [--threshold THRESHOLD]
 
 optional arguments:
 
-  -h, --help            show this help message and exit
+                -h, --help            show this help message and exit
   
-  --s S                 0 linearRegression, 1 logisticRegression
+                --s S                 0 linearRegression, 1 logisticRegression
   
-  --trainfile TRAINFILE
-                        The path of the training file
+                --trainfile TRAINFILE
+                                      The path of the training file
                         
-  --delimiter DELIMITER
-                        Delimiters for training files,the default is a space
+                --delimiter DELIMITER
+                                      Delimiters for training files,the default is a space
                         
-  --modelfile MODELFILE
-                        Output model file
+                --modelfile MODELFILE
+                                      Output model file
                         
-  --method METHOD       0 gradientAscent(or gradientDescent) , 1
-                        stocGradientAscent(or stocGradientDescent)
+                 --method METHOD       0 gradientAscent(or gradientDescent) , 1
+                                      stocGradientAscent(or stocGradientDescent)
                         
-  --iterations ITERATIONS
-                        Number of iterations of training
+                 --iterations ITERATIONS
+                                      Number of iterations of training
                         
-  --alpha ALPHA         learning rate
+                 --alpha ALPHA         learning rate
   
-  --threshold THRESHOLD
-                        Threshold of model classification
+                 --threshold THRESHOLD
+                                      Threshold of model classification
                         
 example one:
 
@@ -93,38 +95,38 @@ Train Accuracy: 95.000000%
 
 usage: predict.py [-h] 
 
---s S 
+                  --s S 
 
---modelfile MODELFILE 
+                  --modelfile MODELFILE 
 
---predictfile PREDICTFILE
+                  --predictfile PREDICTFILE
 
-[--delimiter DELIMITER] 
+                  [--delimiter DELIMITER] 
              
---resultfile RESULTFILE
+                  --resultfile RESULTFILE
 
-[--threshold THRESHOLD]
+                  [--threshold THRESHOLD]
 
 optional arguments:
 
-  -h, --help            show this help message and exit
+                 -h, --help            show this help message and exit
   
-  --s S                 0 linearRegression, 1 logisticRegression
+                 --s S                 0 linearRegression, 1 logisticRegression
   
-  --modelfile MODELFILE
-                        The trained model file
+                 --modelfile MODELFILE
+                                       The trained model file
                         
-  --predictfile PREDICTFILE
-                        The path of the training file
+                 --predictfile PREDICTFILE
+                                       The path of the training file
                         
-  --delimiter DELIMITER
-                        Delimiters for predict files,the default is a space
+                 --delimiter DELIMITER
+                                       Delimiters for predict files,the default is a space
                         
-  --resultfile RESULTFILE
-                        Forecast result document
+                 --resultfile RESULTFILE
+                                       Forecast result document
                         
-  --threshold THRESHOLD
-                        Threshold of model classification
+                 --threshold THRESHOLD
+                                       Threshold of model classification
                         
 
 example three:
