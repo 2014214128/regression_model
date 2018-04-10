@@ -20,7 +20,7 @@ class LogisticRegression(object):
 
     def costFunction(self):
         h = self.sigmiod(dot(self.X, self.theta))
-        J = -1.0 * (1.0 / self.m) * (log(h).T.dot(self.y) + log(1 - h).T.dot(1 - self.y))
+        J = -1.0 * (log(h).T.dot(self.y) + log(1 - h).T.dot(1 - self.y))
         if isnan(J[0]):
             return (inf)
         return J[0]
