@@ -17,7 +17,7 @@ class LinearRegression(object):
 
     def costFunction(self):
         h = dot(self.X, self.theta)
-        J = 0.5 * (1.0/self.m) * sum(array((self.y - h)) ** 2)
+        J = 0.5 * sum(array((self.y - h)) ** 2)
         if isnan(J):
             return (inf)
         return J
